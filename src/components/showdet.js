@@ -8,13 +8,16 @@ export const Showdet = (props) => {
     // for(let i=0;i<repos.data.length;i++){
     //     console.log(repos.data[i].name);
     // }
-     if(props.naming===""){
-         return <>Enter Some Value</>
-     }
-     else{
-     const repolist = repos.data.length===0? <li>Not Matching</li> : repos.data.map((item)=>{
-         return <li>{item.name}</li>
-     })
+    //   const repolist = repos.data.length===0? <li>Not Matching</li> : repos.data.map((item)=>{
+    //       return <li><a href={item.html_url}>{item.name}</a></li>
+    //   });
+    if(repos.data===undefined){
+        return <>Load Again</>
+    }
+    else{
+    const repolist =  repos.data.map((item)=>{
+        return <li key={item.id}><a href={item.html_url}>{item.name}</a></li>
+    });
     
      return (
          <>
@@ -24,7 +27,6 @@ export const Showdet = (props) => {
             </ul>
          </>  
      )
-     }    
-    
-}
+     }  
+    } 
 

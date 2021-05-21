@@ -37,6 +37,18 @@
     }
 }
 
-body {
-    margin-left: 5px;
+.total {
+    text-align: center;
+    border: 2px solid black;
+    width: 50%;
 }
+
+li {
+    list-style: none;
+}
+
+.search {
+    padding-bottom: 3%;
+}
+
+.search input[type=text] {}

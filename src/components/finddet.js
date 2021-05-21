@@ -21,12 +21,14 @@ export const Finddet = () => {
     };
     return (
         <>
-        <div className="App">
+        <div className="search">
             <input type="text" placeholder="Type the Username Here!" value={findInput} onChange={goChange} />
             <br />
             <button onClick={goClick}>Search</button>
         </div>
+        <div className="result">
         <Showdet repos={repos} naming={findInput}/>
+        </div>
         </>
     )
 }

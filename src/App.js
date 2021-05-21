@@ -3,12 +3,13 @@ import { Finddet } from "./components/finddet";
 
 function App() {
   return (
-    <div>
-      <h1 className="App">Get Your GitHub Profile</h1>
+    <>
+    <h1>Get Your GitHub Profile</h1>
+    <div className="total">
       <br/>
       <Finddet/>
     </div>
-    
+    </>
   );
 }
 

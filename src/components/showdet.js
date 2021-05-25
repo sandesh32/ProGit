@@ -16,7 +16,7 @@ export const Showdet = (props) => {
     }
     else{
     const repolist =  repos.data.map((item)=>{
-        return <li key={item.id}><a href={item.html_url}>{item.name}</a></li>
+        return <li key={item.id}><a href={item.html_url} target="_blank">{item.name}</a></li>
     });
     var source=`https://avatars.githubusercontent.com/${props.naming}`;
     var hr=`https://github.com/${props.naming}`;
@@ -32,7 +32,7 @@ export const Showdet = (props) => {
          <br />
          <br />
          <div class="PRof">
-         Public Repositories of <a href={hr}>{props.naming}</a>:
+         Public Repositories of <a href={hr} target="_blank">{props.naming}</a>:
          </div>
          <div class="repolist">
             <ul>

@@ -56,6 +56,11 @@ li {
 a {
   color: white;
 }
+/* .repolist {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} */
 .repolist a {
   text-decoration: none;
   border: solid white 3px;
@@ -101,11 +106,6 @@ h1 {
 .PRof {
   margin: 10px;
   margin-top: -5px;
-  /* color: rgb(181, 236, 220); */
   font-family: cursive;
   font-size: 25px;
-}
-.PRof a {
-  /* color: rgb(181, 236, 220);
-  text-decoration: none; */
 }

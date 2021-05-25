@@ -31,10 +31,14 @@ export const Showdet = (props) => {
         } />
          <br />
          <br />
+         <div class="PRof">
          Public Repositories of <a href={hr}>{props.naming}</a>:
+         </div>
+         <div class="repolist">
             <ul>
                 {repolist}
             </ul>
+        </div>
          </>  
      )
      }  

@@ -52,8 +52,12 @@
 li {
   list-style: none;
 }
+
 a {
   color: white;
+}
+.repolist a {
+  text-decoration: none;
   border: solid white 3px;
   /* display: inline-block; */
   margin: 10px;
@@ -64,12 +68,11 @@ a {
   height: 60px;
   width: 200px;
   text-align: center;
-  text-decoration: none;
   box-sizing: border-box;
   padding-top: 15px;
   /* overflow: hidden; */
 }
-a:hover {
+.repolist a:hover {
   border: solid rgb(44, 170, 160) 5px;
 }
 .search input[type="text"],
@@ -94,4 +97,15 @@ a:hover {
 h1 {
   color: rgb(143, 235, 208);
   text-decoration: underline;
+}
+.PRof {
+  margin: 10px;
+  margin-top: -5px;
+  /* color: rgb(181, 236, 220); */
+  font-family: cursive;
+  font-size: 25px;
+}
+.PRof a {
+  /* color: rgb(181, 236, 220);
+  text-decoration: none; */
 }

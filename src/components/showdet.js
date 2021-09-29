@@ -31,7 +31,7 @@ export const Showdet = (props) => {
         } />
          <br />
          <br />
-         Public Repositories:
+         Public Repos of <br><a href={hr}>{props.naming}</a>:<br>
             <ul>
                 {repolist}
             </ul>

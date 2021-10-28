@@ -5,7 +5,6 @@ import { Showdet } from "./showdet";
 export const Finddet = () => {
 	const [findInput, setFindInput] = useState("");
 	const [repos, setRepos] = useState([]);
-
 	const goChange = e => {
 		setFindInput(e.target.value);
 	};
@@ -13,7 +12,7 @@ export const Finddet = () => {
 		console.log(findInput);
 		try {
 			const details = await axios(
-				`https://api.github.com/users/${findInput}/repos`
+				`https://api.github.com/users/${findInput}/repos?page=1&per_page=100`  //now upto 100 repos will be fetched
 			);
 			setRepos(details);
 		} catch (e) {
@@ -34,6 +33,7 @@ export const Finddet = () => {
 			<div className='result'>
 				<Showdet repos={repos} naming={findInput} />
 			</div>
+			<div class='search'><button onClick={()=>{window.location.reload(false);}}>Clear</button></div >
 		</>
 	);
 };

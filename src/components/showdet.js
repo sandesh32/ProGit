@@ -14,6 +14,8 @@ export const Showdet = props => {
 	if (repos.data === undefined) {
 		return <>Load Again</>;
 	} else {
+		const repocount = repos.data.length;
+		console.log(repocount);
 		const repolist = repos.data.map(item => {
 			return (
 				<li key={item.id}>
@@ -24,6 +26,7 @@ export const Showdet = props => {
 		var source = `https://avatars.githubusercontent.com/${props.naming}`;
 		var hr = `https://github.com/${props.naming}`;
 		//document.getElementById("x").src=source;
+		// console.log(repos);
 		return (
 			<>
 				<div className='avatar'>
@@ -34,6 +37,7 @@ export const Showdet = props => {
 					{props.naming}
 				</a>
 				<br />
+				<h3>Number of repos: {repocount}</h3>
 				<ul>{repolist}</ul>
 			</>
 		);
